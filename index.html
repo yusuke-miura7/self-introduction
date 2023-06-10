@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Yusuke Miura</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="static/images/android-desktop.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="static/images/ios-desktop.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <link rel="shortcut icon" href="static/images/favicon.png">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+
+    <!-- 左のサイドバー部分 -->
+    <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-200 mdl-color-text--blue-grey-0"
+      style="position: fixed;">
+
+      <!-- サイドバーのヘッダー部(顔写真、メールアドレス部分) -->
+      <header class="demo-drawer-header">
+        <!-- 顔画像 -->
+        <img src="static/images/user.png" class="demo-avatar">
+
+        <!-- 顔画像の下 -->
+        <div class="demo-avatar-dropdown">
+          <!-- 名前 -->
+          <span>Yusuke Miura</span>
+        </div>
+
+      </header>
+
+      <!-- 下の部分 -->
+      <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800"
+        style="display: flex; justify-content: center;">
+        <!-- アイコン一覧 -->
+        <!-- https://fonts.google.com/icons -->
+        <!-- about(人のアイコン) -->
+        <a class="mdl-navigation__link" href="#about"><i class="mdl-color-text--blue-grey-400 material-icons"
+            role="presentation">person</i>ABOUT</a>
+
+        <!-- 学歴 -->
+        <a class="mdl-navigation__link" href="#education"><i class="mdl-color-text--blue-grey-400 material-icons"
+            role="presentation">school</i>EDUCATION</a>
+
+        <!-- アルバイト -->
+        <a class="mdl-navigation__link" href="#work-experience"><i class="mdl-color-text--blue-grey-400 material-icons"
+            role="presentation">assignment</i>WORK EXPERIENCE</a>
+
+        <!-- 趣味 -->
+        <a class="mdl-navigation__link" href="#hobbies"><i class="mdl-color-text--blue-grey-400 material-icons"
+            role="presentation">directions_run</i>HOBBIES</a>
+
+        <!-- 作品 -->
+        <a class="mdl-navigation__link" href="#work"><i class="mdl-color-text--blue-grey-400 material-icons"
+            role="presentation">create</i>WORK</a>
+
+        <!-- 賞罰 -->
+        <a class="mdl-navigation__link" href="#awards"><i class="mdl-color-text--blue-grey-400 material-icons"
+            role="presentation">emoji_events</i>AWARDS</a>
+
+        <!-- スペース確保 -->
+        <div class="mdl-layout-spacer"></div>
+      </nav>
+
+    </div>
+
+    <!-- main部分 -->
+    <div class="main p-0 mdl-layout__content">
+      <!-- about -->
+      <section class="resume-section" id="about">
+        <div class="about-content">
+          <!-- 名前 -->
+          <h1>Yusuke Miura</h1>
+
+          <!-- 自己紹介 -->
+          <div class="mini-sentence">
+            <h4>自己紹介</h4>
+            <p>
+              幼少期からゲームやインターネットと触れ合う中でそれらの動作原理に興味を抱き、東京理科大学の情報科学科に入学。
+              <br>
+              大学で様々なITの知識を学び、ITの世界にますます没頭しています。
+              <br>
+              自分の考えたことを目に見える形として表現、実現することが好き。
+              <br>
+              現在はチームで何かを作りたいと考え、webアプリケーションの開発に取り組んでいます。
+            </p>
+          </div>
+
+          <!-- 誕生日 -->
+          <div class="mini-sentence">
+            <h4>誕生日</h4>
+            <p>
+              2000/07/21
+              <br>
+            </p>
+          </div>
+
+          <!-- 出身 -->
+          <div class="mini-sentence">
+            <h4>出身</h4>
+            <div>
+              <img class="picture" src="static/images/ootaka.jpg">
+            </div>
+            <P>
+              千葉県 流山市
+              <br>
+              近年、おおたかの森を中心に急激な開発が行われどこか寂しさを感じています。
+            </P>
+          </div>
+
+          <!-- Github -->
+          <div class="mini-sentence">
+            <h4>Githubアカウント</h4>
+            <a class="icon" href="https://github.com/yusuke-miura7" target="_blank">
+              <img class="icon" src="static/images/git.png">
+            </a>
+          </div>
+
+          <!-- メールアドレス -->
+          <div class="mini-sentence">
+            <h4>連絡先</h4>
+            <p>
+              <a href="mailto:miura2000T@outlook.jp">itach-y0721@outlook.jp</a>
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- education -->
+      <section class="resume-section" id="education">
+        <div class="education-content">
+          <h2>EDUCATION</h2>
+
+          <!-- 大学院 -->
+          <div class="sentence">
+            <h3>東京理科大学院</h3>
+            <h4>創域理工学研究科 情報計算科学専攻</h4>
+            <p>
+              専門知識の修得と学術的探究活動を続けたいと考え、大学院に進学。
+              <br>
+              学部時代に学んだITの知識を他分野にも活用できるかを考え、横断型のカリキュラムであるDXコースに参加している。
+              <br>
+              <br>
+              現在は、災害時に通信インフラが機能しないことを想定し、
+              避難者同士で自律的にネットワークを構成するMANETを利用し、
+              ノードにドローンを参加させた避難誘導システムの研究について行っている。
+            </p>
+          </div>
+
+          <!-- 大学 -->
+          <div class="sentence">
+            <h3>東京理科大学</h3>
+            <h4>理工学部 情報科学科</h4>
+            <p>
+              GPA 3.24
+            </p>
+            <P>
+              <a href="https://mlab.is.noda.tus.ac.jp/%E3%83%9B%E3%83%BC%E3%83%A0" target="_blank">松澤研究室</a>ネットワークゼミ所属
+            </P>
+
+            <p>
+              学部3年時に情報通信ネットワークという講義でOSI参照モデルに基づいてネットワークの仕組みを
+              学習し、ネットワーク分野に興味を持つ。
+              <br>
+              <br>
+              卒業研究では、災害時の避難経路探索に多目的遺伝的アルゴリズムを適応し、
+              津波を想定した多数の目的を最適化し、生存率の高いより早い避難経路の提示を目指した。
+            </p>
+          </div>
+
+
+          <!-- 高校 -->
+          <div class="sentence">
+            <h3>千葉県立柏高等学校</h3>
+            <h4>理数科</h4>
+            <p>
+              スーパーサイエンスハイスクールに指定されており、夏休みの期間にはアメリカへの短期派遣も行っている。
+              <br>
+              二年時に課題研究という形で一つのテーマに取り組み、チームメンバーと共に1年間研究活動をすることを経験。
+              <br>
+              逆級化層理の生成原理について共に研究し、専門家の前で発表する機会も得た。
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <hr>
+
+      <!-- work-experience -->
+      <section class="resume-section" id="work-experience">
+        <div class="work-expeience-content">
+          <h2>WORK EXPERIENCE</h2>
+
+          <!-- TA  -->
+          <div class="sentence">
+            <h3>TA(TEACHING ASSTSTANT)</h3>
+            <p>
+              C言語、C++、Java、Pythonなどのプログラミングの演習を扱う講義の教授の補佐を行う。
+              <br>
+              具体的には、環境構築から講義内容まで学生がわからないところを教えることやレポートの採点などを行う。
+              <br>
+              自身が学んできたことを活かすことや、理解の助けに貢献でき、人から感謝されることの喜びを感じる。
+            </p>
+          </div>
+
+          <!-- ヤマト運輸 -->
+          <div class="sentence">
+            <h3>ヤマト運輸</h3>
+            <p>
+              無線トランシーバーを使用し各地に配置された仲間と連携し、トラックのドライバーを誘導する仕事に従事。
+              <br>
+              10代から60代まで様々な年代の人々と共に働く機会を得ながらチームワークとコミュニケーション能力を磨く。
+            </p>
+          </div>
+
+          <!-- OTHER -->
+          <div class="sentence">
+            <h3>OTHER</h3>
+            <img class="" src="static/images/picture.jpg" width=400px; height=400px; style="margin-bottom: 2rem;">
+            <p>
+              オープンキャンパスで来場された方々に学科の説明や研究内容の紹介を行う。
+              <br>
+              学科の紹介ホームページの撮影に被写体として参加。
+              <br>
+              学科の魅力を的確に伝えることができるよう努める。
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- hobbies -->
+      <section class="resume-section" id="hobbies">
+        <div class="hobbies-content">
+          <h2>HOBBIES</h2>
+
+          <!-- ランニング -->
+          <div class="sentence">
+            <h3>ランニング</h3>
+            <div class="two-layout">
+              <div>
+                <img class="picture" src="static/images/run1.jpg">
+              </div>
+              <div>
+                <img class="picture" src="static/images/run2.jpg">
+              </div>
+            </div>
+            <p>
+              トレーニングや自己管理など自分の生活に向き合う必要があり、
+              それが形として如実に表れるところや走り切ったときの達成感に魅力を感じている。
+              <br>
+              中学時に学校を代表して千葉県東葛地区の駅伝大会にメンバーとして参加。
+              <br>
+              高校時には部長としてチームを牽引し、練習メニューの考案や他校の先生と連絡をとり共同練習を実施。
+              <br>
+              現在は趣味の一環として継続しており、自宅近くの土手を走るなどしている。
+            </p>
+          </div>
+
+          <!-- TRPG -->
+          <div class="sentence">
+            <h3>TRPG(TABLE TORK RPG)</h3>
+            <img class="picture" src="static/images/trpg.jpg">
+            <p>
+              自由な発想や参加メンバーによって物語は大きく異なり、予想できない新たな展開が生まれる魅力がある。
+              <br>
+              仲間とともに一緒に物語を作ることに楽しみを感じている。
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- work -->
+      <section class="resume-section" id="work">
+        <div class="work-content">
+          <h2>WORK</h2>
+          <!-- 個人開発 -->
+          <h3>個人開発</h3>
+          <!-- LEDパネル -->
+          <div class="sentence">
+            <h4>LEDパネルで動画再生</h4>
+            <img class="picture" src="static/images/led1.png">
+            <video class="picture" src="static/images/led.mp4" controls="controls" muted="true"></video>
+            <p>
+              ラズベリーパイとLEDパネルコントローラで信号制御し動画再生を実現。
+              <br>
+              esp32で無線通信を行い、時刻を取得することで以上のビデオのようなデジタル時計も作成可能。
+              <br>
+              <a href="https://github.com/yusuke-miura7/led_movie" target="_blank">こちら</a>のページで簡単にまとめている。
+            </p>
+          </div>
+
+          <!-- 避難誘導シミュレータ -->
+          <div class="sentence">
+            <h4>避難誘導シミュレータ</h4>
+            <img class="picture" src="static/images/simulation.png">
+            <p>
+              卒業研究で扱った避難誘導の実験を行うにあたり、マルチエージェントシミュレータをjavaで作成。
+              <br>
+              エージェントは避難者に相当し、グリッドベース上のマップに標高を加え、
+              時間経過で津波や火災を拡大し被災シナリオを再現。
+            </p>
+          </div>
+
+          <!-- チーム開発 -->
+          <h3>チーム開発</h3>
+
+          <!-- オセロAI -->
+          <div class="sentence">
+            <h4>オセロAI</h4>
+            <img class="picture" src="static/images/othello.png">
+            <p>
+              学部3年時にプロジェクト課題と言われる複数人でテーマを決めて
+              実験や開発などをチームで実施する授業においてpythonで作成。
+              <br>
+              min-max法を基盤としてαβ法、Nega-scout法、MTD法やモンテカルロ木探索法など様々なアルゴリズムを実装し
+              勝率や計算時間などの比較実験をした。
+              <br>
+              コード共有やチームでの理解度や進捗のばらつき、スケジュール管理などの
+              チーム開発の難しさと挫折を味わう。
+            </p>
+          </div>
+
+          <!-- オンライン通話アプリ -->
+          <div class="sentence">
+            <h4>オンライン通話アプリ</h4>
+            <img class="picture" src="static/images/video-app.png">
+            <p>
+              上記のチーム開発時で満足のいく開発を行えなかったため、研究室のメンバーを集め主体的にチーム開発を行う。
+              <br>
+              今後のwebアプリケーション開発を本格的に行うことを見越して、ブランチ管理やプルリクやissueなどGitやGithubの
+              使い方を学ぶことを目的とした練習の意図で作成。
+              <br>
+              webRTCという技術を使用している。
+            </p>
+          </div>
+
+          <!-- 現在 -->
+          <div class="sentence">
+            <h4>現在</h4>
+            <img class="picture" src="static/images/docker.png">
+            <p>
+              チームで何かを作成しようとした時に、メンバーを集めるのが難しかったという経験から、
+              ネット上で手軽にチーム開発の募集や参加をできるようなプラットフォームを作成することを決意。
+              <br>
+              現在、webアプリケーションとしてチーム開発に取り掛かっており、
+              dockerを使用してミドルウェアやフレームワークなどの開発環境の統一をした段階。
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- awards -->
+      <section class="resume-section" id="awards">
+        <div class="awards-content">
+          <h2>AWARDS&CERTIFICATIONS</h2>
+          <h4>奨励研究賞</h4>
+          <p>
+            学科の発表会や電子情報通信学会にて卒論の発表を行い、学科主任から
+            情報科学に関して優れた研究活動をしたことを認められ授与された。
+          </p>
+          <h4>基本情報技術者試験</h4>
+          <p>
+            情報系の学科に所属している者として、最低限の知識を有していることを証明するために取得。
+          </p>
+        </div>
+      </section>
+
+    </div>
+    <Script src="https://code.getmdl.io/1.3.0/material.min.js"></Script>
+</body>
+
+</html>
